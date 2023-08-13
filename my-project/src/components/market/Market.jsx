@@ -14,17 +14,17 @@ const Market = () => {
   }
 
   return (
-    <section className="mt-24 px-16">
+    <section className="container my-8 md:my-16">
       <table className="table">
         <thead>
           <tr>
-            <th className=""></th>
-            <th className="">Coin</th>
-            <th className="">Price</th>
-            <th className="">% 24h</th>
-            <th className="">€ 24h</th>
-            <th className="">Market Cap</th>
-            <th>Graph</th>
+            <th></th>
+            <th>Coin</th>
+            <th>Price</th>
+            <th>% 24h</th>
+            <th className="hidden md:table-cell">€ 24h</th>
+            <th className="hidden md:table-cell">Market Cap</th>
+            <th className="hidden lg:table-cell">Graph</th>
           </tr>
         </thead>
         <tbody>

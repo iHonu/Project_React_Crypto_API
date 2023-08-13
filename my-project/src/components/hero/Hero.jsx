@@ -1,14 +1,14 @@
 const Hero = () => {
   return (
-    <div className="prose-2xl dark:prose-invert flex flex-col justify-center mt-24">
-      <div className="w-auto mx-auto text-center">
-        <h1 className="font-bold from-blue-400 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
-          Explore the Pulse of{' '}
-          <span className="from-red-400 to-blue-400 bg-gradient-to-r bg-clip-text text-transparent">
+    <div className="flex flex-col justify-center p-6 my-8 md:my-16">
+      <div className="mx-auto text-center">
+        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl from-blue-600 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
+          Explore the Pulse of
+          <div className="from-red-400 to-blue-400 bg-gradient-to-r bg-clip-text text-transparent">
             Cryptocurrency
-          </span>
+          </div>
         </h1>
-        <p className="font-extralight">
+        <p className="mt-4 font-light text-sm md:text-base md:mt-8 lg:text-lg">
           From charts to news and everything in between, we got the insights you
           crave.
         </p>

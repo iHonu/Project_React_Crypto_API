@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import AppLogo from './AppLogo';
+import { LogoIcon } from '../../icons/icon';
+
 const Logo = () => {
   const navigate = useNavigate();
 
@@ -13,7 +14,7 @@ const Logo = () => {
       onClick={handleLogoClick}
       style={{ cursor: 'pointer' }}
     >
-      <AppLogo />
+      <LogoIcon />
       <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
         CoinSearch
       </a>

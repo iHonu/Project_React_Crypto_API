@@ -9,3 +9,7 @@ export function currencyFormatNoCents(num) {
 export function currencyFormatMicroCents(num) {
   return '€' + num.toFixed(3).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
+
+export function currencyFormatBTC(num) {
+  return num.toFixed(7).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1');
+}

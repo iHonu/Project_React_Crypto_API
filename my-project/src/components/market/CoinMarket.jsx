@@ -9,9 +9,9 @@ import CoinSparkline from './CoinSparkline';
 
 const CoinMarket = ({ coin, index }) => {
   return (
-    <tr className="hover:bg-gray-100">
-      <th className="">{index + 1}</th>
-      <td className="">
+    <tr className="hover:bg-gray-50">
+      <th>{index + 1}</th>
+      <td>
         <Link to={`/coin/${coin.id}`}>
           <div className=" flex align-middle gap-4">
             <img src={coin.image} alt={coin.name} className="w-8 h-8" />
@@ -22,7 +22,7 @@ const CoinMarket = ({ coin, index }) => {
           </div>
         </Link>
       </td>
-      <td className="">{currencyFormat(coin.current_price)}</td>
+      <td>{currencyFormat(coin.current_price)}</td>
       <td
         className={` ${
           coin.price_change_percentage_24h < 0
@@ -33,15 +33,19 @@ const CoinMarket = ({ coin, index }) => {
         {coin.price_change_percentage_24h.toFixed(2)}%
       </td>
       <td
-        className={` ${
+        className={` hidden md:table-cell ${
           coin.price_change_24h < 0 ? 'text-red-400' : 'text-green-400'
         }`}
       >
         {currencyFormatMicroCents(coin.price_change_24h)}
       </td>
-      <td className="">{currencyFormatNoCents(coin.market_cap)}</td>
-      <td>
-        <CoinSparkline price={coin.sparkline_in_7d.price} />
+      <td className="hidden md:table-cell">
+        {currencyFormatNoCents(coin.market_cap)}
+      </td>
+      <td className='className="hidden lg:table-cell"'>
+        <Link to={`/coin/${coin.id}`}>
+          <CoinSparkline price={coin.sparkline_in_7d.price} />
+        </Link>
       </td>
     </tr>
   );
