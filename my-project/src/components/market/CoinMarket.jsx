@@ -9,7 +9,7 @@ import CoinSparkline from './CoinSparkline';
 
 const CoinMarket = ({ coin, index }) => {
   return (
-    <tr className="hover:bg-gray-50">
+    <tr className=" hover:bg-gray-300 dark:hover:bg-gray-700">
       <th>{index + 1}</th>
       <td>
         <Link to={`/coin/${coin.id}`}>
@@ -25,16 +25,14 @@ const CoinMarket = ({ coin, index }) => {
       <td>{currencyFormat(coin.current_price)}</td>
       <td
         className={` ${
-          coin.price_change_percentage_24h < 0
-            ? 'text-red-500'
-            : 'text-emerald-500'
+          coin.price_change_percentage_24h < 0 ? 'text-error' : 'text-success'
         }`}
       >
         {coin.price_change_percentage_24h.toFixed(2)}%
       </td>
       <td
         className={` hidden md:table-cell ${
-          coin.price_change_24h < 0 ? 'text-red-400' : 'text-green-400'
+          coin.price_change_24h < 0 ? 'text-error' : 'text-success'
         }`}
       >
         {currencyFormatMicroCents(coin.price_change_24h)}

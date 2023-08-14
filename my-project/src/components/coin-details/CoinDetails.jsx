@@ -28,7 +28,7 @@ const CoinDetails = () => {
         />
 
         <p
-          className=" basis-2/3 font-light"
+          className=" basis-2/3 font-light mt-1"
           dangerouslySetInnerHTML={{ __html: data.description.en }}
         ></p>
       </div>
