@@ -9,7 +9,7 @@ import CoinSparkline from './CoinSparkline';
 
 const CoinMarket = ({ coin, index }) => {
   return (
-    <tr className=" hover:bg-gray-300 dark:hover:bg-gray-700">
+    <tr className=" hover:bg-gray-100 dark:hover:bg-gray-700">
       <th>{index + 1}</th>
       <td>
         <Link to={`/coin/${coin.id}`}>

@@ -21,7 +21,7 @@ const Trending = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-4">
         {data.coins.map((coin) => (
           <CoinTrending key={coin.item.coin_id} coin={coin.item} />
         ))}

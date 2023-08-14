@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-center p-6 my-8 md:my-16">
       <div className="mx-auto text-center">
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl from-blue-600 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
+        <h1 className="font-bold text-4xl md:text-5xl lg:text-7xl from-blue-600 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
           Explore the Pulse of
           <div className="from-red-400 to-blue-400 bg-gradient-to-r bg-clip-text text-transparent">
             Cryptocurrency

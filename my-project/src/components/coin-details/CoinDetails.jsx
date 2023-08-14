@@ -20,7 +20,7 @@ const CoinDetails = () => {
   return (
     <div className="">
       <CoinHeader name={data.name} marketData={data.market_data} />
-      <div className="flex shrink-0 gap-24 my-20 mx-6">
+      <div className=" flex flex-col shrink-0 lg:flex-row gap-8 lg:gap-20 mb-16 mt-8 lg:mt-16">
         <CoinStats
           marketData={data.market_data}
           genesisDate={data.genesis_date}

@@ -4,7 +4,7 @@ import { TDown, TUp } from '../../icons/icon';
 
 const CoinHeader = ({ name, marketData }) => {
   return (
-    <div className="flex flex-col pb-12 border-b my-20">
+    <div className="flex flex-col pb-12 lg:pb-20 border-b mt-20">
       <div>
         <h2 className="text-center text-6xl font-bold">{name}</h2>
       </div>
