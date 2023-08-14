@@ -70,7 +70,8 @@ CoinMarket.propTypes = {
 
 export default CoinMarket;
 
-<div className="flex items-center space-x-3">
+{
+  /* <div className="flex items-center space-x-3">
   <div className="avatar">
     <div className="mask mask-squircle w-12 h-12">
       <img
@@ -83,4 +84,5 @@ export default CoinMarket;
     <div className="font-bold">Hart Hagerty</div>
     <div className="text-sm opacity-50">United States</div>
   </div>
-</div>;
+</div>; */
+}

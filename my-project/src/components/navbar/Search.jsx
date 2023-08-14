@@ -1,7 +1,3 @@
-// import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import useFetch from '../../hooks/useFetch';
-
 const Search = () => {
   return (
     <div className="form-control">

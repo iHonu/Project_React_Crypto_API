@@ -15,7 +15,7 @@ const Stablecoin = () => {
 
   return (
     <section className="flex flex-col md:flex-row">
-      <div className="w-full md:w-2/5 mb-6 md:mb-0 md:mr-8">
+      <div className="w-2/5">
         <h2 className="text-2xl md:text-3xl text-primary  opacity-80 font-semibold mb-4">
           Stablecoins
         </h2>
@@ -27,7 +27,7 @@ const Stablecoin = () => {
           medium of exchange in the often turbulent world of cryptocurrencies.
         </p>
       </div>
-      <div className="flex flex-wrap justify-start">
+      <div className="grid grid-cols-5 justify-self-center">
         {data.map((coin) => (
           <CoinStable key={coin.id} coin={coin} />
         ))}
@@ -37,3 +37,4 @@ const Stablecoin = () => {
 };
 
 export default Stablecoin;
+// w-full md:w-2/5 mb-6 md:mb-0 md:mr-8
