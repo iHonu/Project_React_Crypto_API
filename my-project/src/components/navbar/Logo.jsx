@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { LogoIcon } from '../../icons/icon';
+import { motion } from 'framer-motion';
 
 const Logo = () => {
   const navigate = useNavigate();
@@ -14,7 +15,16 @@ const Logo = () => {
       onClick={handleLogoClick}
       style={{ cursor: 'pointer' }}
     >
-      <LogoIcon />
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 360 }}
+        whileTap={{
+          scale: 0.8,
+          rotate: -90,
+        }}
+      >
+        <LogoIcon />
+      </motion.div>
+
       <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
         CoinSearch
       </a>

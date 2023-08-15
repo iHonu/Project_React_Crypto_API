@@ -1,5 +1,18 @@
+import { motion } from 'framer-motion';
 import useFetch from '../../hooks/useFetch';
 import CoinMarket from './CoinMarket';
+
+const container = {
+  hidden: { opacity: 0, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.1,
+      staggerChildren: 0.3,
+    },
+  },
+};
 
 const Market = () => {
   const { loading, data, error } = useFetch(
@@ -15,7 +28,12 @@ const Market = () => {
 
   return (
     <section className="container my-8 md:my-16">
-      <table className="table">
+      <motion.table
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className="table"
+      >
         <thead>
           <tr>
             <th></th>
@@ -32,7 +50,7 @@ const Market = () => {
             <CoinMarket key={coin.id} coin={coin} index={index} />
           ))}
         </tbody>
-      </table>
+      </motion.table>
     </section>
   );
 };

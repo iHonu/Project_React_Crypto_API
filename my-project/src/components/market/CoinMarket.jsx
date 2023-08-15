@@ -6,10 +6,23 @@ import {
   currencyFormatMicroCents,
 } from '../../utils';
 import CoinSparkline from './CoinSparkline';
+import { motion } from 'framer-motion';
+
+const item = {
+  hidden: { y: 20, opacity: 0, scale: 1.3 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+  },
+};
 
 const CoinMarket = ({ coin, index }) => {
   return (
-    <tr className=" hover:bg-gray-100 dark:hover:bg-gray-700">
+    <motion.tr
+      variants={item}
+      className=" hover:bg-gray-100 dark:hover:bg-gray-700"
+    >
       <th>{index + 1}</th>
       <td>
         <Link to={`/coin/${coin.id}`}>
@@ -45,7 +58,7 @@ const CoinMarket = ({ coin, index }) => {
           <CoinSparkline price={coin.sparkline_in_7d.price} />
         </Link>
       </td>
-    </tr>
+    </motion.tr>
   );
 };
 
@@ -67,20 +80,3 @@ CoinMarket.propTypes = {
 };
 
 export default CoinMarket;
-
-{
-  /* <div className="flex items-center space-x-3">
-  <div className="avatar">
-    <div className="mask mask-squircle w-12 h-12">
-      <img
-        src="/tailwind-css-component-profile-2@56w.png"
-        alt="Avatar Tailwind CSS Component"
-      />
-    </div>
-  </div>
-  <div>
-    <div className="font-bold">Hart Hagerty</div>
-    <div className="text-sm opacity-50">United States</div>
-  </div>
-</div>; */
-}

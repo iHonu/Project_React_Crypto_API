@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { currencyFormatBTC } from '../../utils';
+import { motion } from 'framer-motion';
+
 const CoinTrending = ({ coin }) => {
   return (
     <Link to={`/coin/${coin.id}`}>
-      <div className="hover:scale-110">
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{
+          scale: 0.9,
+        }}
+      >
         <div className="flex justify-between p-4 border-gray-100 rounded shadow-lg">
           <div className="mask mask-hexagon w-12">
             <img src={coin.small} alt={coin.name} className="w-full" />
@@ -20,7 +27,7 @@ const CoinTrending = ({ coin }) => {
             <p className="text-xs">{coin.market_cap_rank}</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 };
