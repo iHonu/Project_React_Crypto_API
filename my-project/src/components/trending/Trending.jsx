@@ -5,7 +5,7 @@ const Trending = () => {
   const { loading, data, error } = useFetch('search/trending');
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <span className="loading loading-dots loading-lg"></span>;
   }
   if (error) {
     return <p>{error.message}</p>;
