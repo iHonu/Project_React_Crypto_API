@@ -2,7 +2,7 @@
 
 CryptoInsight is an elegant and intuitive React application, offering deep insights into the world of cryptocurrencies. Built upon the CoinGecko API, it serves as a comprehensive guide for enthusiasts looking to keep a finger on the pulse of the crypto market. With seamless animations, responsive design, and the flair of dark/light theme toggle, the app brings you an unparalleled user experience.
 
-![App screenshot](URL_TO_YOUR_APP_SCREENSHOT)
+![App screenshot](Screenshot%20.png)
 
 ## 🌟 Features
 
