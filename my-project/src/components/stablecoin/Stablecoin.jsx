@@ -37,4 +37,3 @@ const Stablecoin = () => {
 };
 
 export default Stablecoin;
-// w-full md:w-2/5 mb-6 md:mb-0 md:mr-8
