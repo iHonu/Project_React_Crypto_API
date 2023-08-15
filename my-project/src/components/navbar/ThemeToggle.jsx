@@ -3,12 +3,6 @@ import { useState, useEffect } from 'react';
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
-  // useEffect(() => {
-  //   localStorage.setItem('theme', theme);
-  //   document.querySelector('html').setAttribute('data-theme', theme);
-  //   document.querySelector('html').classList.add(theme);
-  // }, [theme]);
-
   useEffect(() => {
     localStorage.setItem('theme', theme);
     const htmlElement = document.querySelector('html');

@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 const Hero = () => {
   const container = {
@@ -24,6 +25,19 @@ const Hero = () => {
     },
   };
 
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({
+      backgroundPosition: ['0% 0%', '100% 0%', '100% 100%', '0% 100%', '0% 0%'],
+      transition: {
+        duration: 5,
+        loop: Infinity,
+        ease: 'linear',
+      },
+    });
+  }, [controls]);
+
   return (
     <motion.div
       variants={container}
@@ -34,12 +48,11 @@ const Hero = () => {
       <div className="mx-auto text-center">
         <motion.h1
           variants={item}
+          animate={controls}
           className="font-bold text-4xl md:text-5xl lg:text-7xl from-blue-600 to-red-400 bg-gradient-to-r bg-clip-text text-transparent"
+          style={{ backgroundSize: '200% 200%' }}
         >
-          Explore the Pulse of
-          <div className="from-red-400 to-blue-400 bg-gradient-to-r bg-clip-text text-transparent">
-            Cryptocurrency
-          </div>
+          Explore the Pulse of Cryptocurrency
         </motion.h1>
         <motion.p
           variants={item}

@@ -57,7 +57,7 @@ const HistoryChart = () => {
 
   const options = {
     responsive: true,
-    maintainAspectRatio: false, // Allow the chart to take up the whole container
+    maintainAspectRatio: false,
     aspectRatio: 1,
     plugins: {
       legend: {
