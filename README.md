@@ -1,5 +1,7 @@
 # 🚀 CoinSearh - React Crypto Market Search
 
+[DEMO](https://stunning-cocada-99c314.netlify.app)
+
 CryptoInsight is an elegant and intuitive React application, offering deep insights into the world of cryptocurrencies. Built upon the CoinGecko API, it serves as a comprehensive guide for enthusiasts looking to keep a finger on the pulse of the crypto market. With seamless animations, responsive design, and the flair of dark/light theme toggle, the app brings you an unparalleled user experience.
 
 ![App screenshot](Screenshot%20.png)
