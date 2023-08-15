@@ -23,3 +23,10 @@ CryptoInsight is an elegant and intuitive React application, offering deep insig
 - **Elegant Design & Animations**: A minimalist yet striking design powered by Tailwind CSS, combined with smooth animations achieved via Framer Motion.
 
 - **Dark/Light Theme Toggle**: Personalize your experience; switch between themes as per your mood or ambient lighting.
+
+## 🛠 Technologies Used
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Framer Motion](https://www.framer.com/motion/) - A production-ready motion library for React.
+- [DaisyUI](https://daisyui.com/) - Tailwind CSS components plugin.
