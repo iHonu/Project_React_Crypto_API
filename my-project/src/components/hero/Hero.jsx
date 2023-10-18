@@ -32,7 +32,7 @@ const Hero = () => {
       backgroundPosition: ['0% 0%', '100% 0%', '100% 100%', '0% 100%', '0% 0%'],
       transition: {
         duration: 5,
-        loop: Infinity,
+        repeat: Infinity,
         ease: 'linear',
       },
     });
